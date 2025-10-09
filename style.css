@@ -1,0 +1,201 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: hsl(216, 12%, 8%);
+  width: 100%;
+  height: 80vh;
+  font-family: Overpass;
+}
+
+/*
+
+
+
+Rating component styles
+
+
+
+*/
+
+.container{
+  background-color: hsl(215, 25%, 15%);
+  margin: 10rem auto;
+  width: 412px;
+  height: 416px;
+  border-radius: 30px;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.star-div{
+  background-color: hsl(213, 24%, 18%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header{
+  color: white;
+  padding-top: 2rem;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.feedback{
+  color: hsl(215, 14%, 63%);
+  font-size: 15px;
+  padding-top: 1rem;
+  line-height: 24px;
+  width: 330px;
+  padding-bottom: 2rem;
+}
+
+.rate-states{
+  
+}
+
+.btn-num{
+  width: 51px;
+  height: 51px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 16px;
+  background-color: hsl(213, 24%, 18%);
+  color: hsl(215, 14%, 63%);
+  font-size: 16px;
+  font-weight: 700;
+  transition: all .2s ease-in;
+}
+
+.btn-num:hover{
+  background-color: white;
+  color: hsl(213, 19%, 18%);
+}
+
+.btn-num.active{
+  color: hsl(213, 19%, 18%);
+  background-color: hsl(25, 97%, 53%);
+}
+
+#submit-btn{
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(213, 19%, 18%);
+  width: 341px;
+  height: 45px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 22px;
+  padding: auto;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all .2s ease-in;
+}
+
+#submit-btn:hover{
+  background-color: white;
+  color: hsl(215, 25%, 15%);
+}
+
+
+/*
+
+
+
+Thankyou component
+
+
+
+*/
+
+#thankyou-component{
+  background-color:  hsl(215, 25%, 15%);
+  margin: 5rem auto;
+  width: 412px;
+  height: 416px;
+  border-radius: 30px;
+  text-align: center;
+  display: none;
+}
+
+.thankyou-img{
+  padding-top: 2rem;
+}
+
+#dynamic-text{
+  background-color: hsl(213, 24%, 18%);
+  color: hsl(25, 97%, 53%);
+  width: 168px;
+  height: 32px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem auto;
+}
+
+.dynamic-number{
+  padding: 0 3px;
+}
+
+.thankyou-heading{
+  color: white;
+  font-size: 28px;
+  padding-bottom: .7rem;
+}
+
+.thankyou-text{
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(215, 14%, 63%);
+  padding: 0rem 2.3rem;
+  line-height: 22px;
+}
+
+/*
+
+
+
+Media Queries
+
+
+*/
+
+@media only screen and (max-width: 580px) {
+  .container{
+    width: 92%;
+    height: 50%;
+    padding: 1.5rem;
+  }
+
+  .feedback{
+    width: 100%;
+  }
+
+  .btn-num{
+    margin-right: 14px;
+  }
+
+  .rate-states{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #submit-btn{
+    width: 100%;
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+}

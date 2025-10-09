@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Rating state start -->
+   <section id="rating-component">
+      <div class="container">
+        <div class="star-div"><img class="star" src="images/icon-star.svg" alt=""></div>
+        <h2 class="header">How did we do?</h2>
+        <p class="feedback">
+          Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+        </p>
+
+        <div class="rate-states">
+          <button class="btn-num btn-1" type="button">1</button>
+          <button class="btn-num btn-2" type="button">2</button>
+          <button class="btn-num btn-3" type="button">3</button>
+          <button class="btn-num btn-4" type="button">4</button>
+          <button class="btn-num btn-5" type="button">5</button>
+        </div>
+        <div class="submit-container">
+        <input id="submit-btn" value="SUBMIT" type="submit"> 
+        </div>
+      </div>
+   </section>
+
+   <!-- Rating state end -->
+   <section id="thankyou-component">
+      <div class="thankyou-img">
+        <img src="images/illustration-thank-you.svg" alt="tank you image">
+      </div>
+
+      <p id="dynamic-text">You selected <span class="dynamic-number"></span>
+        out of 5
+      </p>
+      <h2 class="thankyou-heading">Thank you!</h2>
+      <p class="thankyou-text">We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+   </section>
+  <script src="script.js"></script>
+</body>
+</html>
