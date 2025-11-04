@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan';
+  color: hsl(221, 14%, 31%);
+  font-weight: 700;
+}
+
+body{
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: hsl(222, 26%, 31%);
+  margin: 0 auto;
+}
+
+body.active1{
+  background-color: hsl(0,0%,90%);
+}
+
+body.active1 .btn{
+  background-color: hsl(0,5%,81%);
+}
+
+body.active2 {
+  background-color: hsl(268,75%,9%);
+}
+
+.toggle{
+  display: flex;
+  justify-content: space-between;
+}
+
+.right{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.toggle p{
+  margin: 0 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+body.active1 .toggle h3{
+  color: #fff;
+}
+
+body.active2 .toggle h3{
+  color: hsl(52,100%,62%);
+}
+
+h3{
+  color: #fff;
+}
+
+.control{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.control .box{
+  width: 60px;
+  height: 15px;
+  border-radius: 30px;
+  background-color: hsl(224,36%,15%);
+  position: relative;
+  margin-left: 4px;
+}
+
+body.active1 .control .box{
+  background-color: hsl(0,5%,81%);
+}
+
+body.active2 .control .box{
+  background-color: hsl(268,71%,12%);
+}
+
+.control #circle{
+  width: 15px;
+  height: 15px;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: hsl(6,63%,50%);
+}
+
+.control #circle:active{
+  background-color: hsl(6, 72%, 58%);
+}
+
+body.active1 .control #circle{
+  background-color: hsl(25,98%,40%);
+}
+
+body.active1 .control #circle:active{
+  background-color: hsl(25, 88%, 67%);
+}
+
+body.active2 .control #circle{
+  background-color: hsl(176,100%,44%);
+}
+
+body.active2 .control #circle:active{
+  background-color: hsl(175, 71%, 74%);
+}
+
+.control .p{
+  color: #fff;
+  cursor: pointer;
+  margin-right: 4px;
+}
+
+body.active1 .control p{
+  color: #111;
+}
+
+body.active1 .right p{
+  color: #111;
+}
+
+body.active2 .control p{
+  color: hsl(52,100%,62%);
+}
+
+body.active2 .right p{
+  color: hsl(52,100%,62%);
+}
+
+.display{
+  width: 450px;
+}
+
+#display{
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+  font-size: 32px;
+  text-align: right;
+  color: #fff;
+  border: 0;
+  outline: none;
+  border-radius: 7px;
+  background-color: hsl(224,36%,15%);
+}
+
+body.active1 #display{
+  background-color: hsl(0,0%,93%);
+  color: #111;
+}
+
+body.active2 #display{
+  background-color: hsl(268,71%,12%);
+  color: hsl(52,100%,62%);
+}
+
+button{
+  width: 90px;
+  height: 50px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 32px;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px;
+  box-shadow: 0 3px 0 0 hsl(28,16%,65%); 
+}
+
+body.active1 button{
+  box-shadow: 0 3px 0 0 hsl(35,11%,61%);
+}
+
+body.active2 button{
+  box-shadow: 0 3px 0 0 hsl(290,70%,36%);
+  background-color: hsl(268, 47%, 21%);
+  color: hsl(52,100%,62%);
+}
+
+
+body.active2 button:active{
+ background-color: hsl(275, 93%, 35%);
+}
+
+.btn{
+  display: flex;
+  width: 450px;
+  flex-wrap: wrap;
+  padding: 10px 5px;
+  margin: 8px 0;
+  border-radius: 7px;
+  background-color: hsl(224,36%,15%);
+}
+
+body.active2 .btn{
+  background-color: hsl(268,71%,12%);
+}
+
+.reset,.del{
+  color: #fff;
+  font-size: 16px;
+  box-shadow: 0 3px 0 0 hsl(35,11%,61%);
+  background-color: hsl(225,21%,49%);
+}
+
+.reset:active,.del:active{
+  background-color: hsl(225, 51%, 75%);
+}
+
+.equal:active{
+  background-color: hsl(6, 65%, 61%);
+}
+
+body.active1 .reset, body.active1 .del{
+  box-shadow: 0 3px 0 0 hsl(35,11%,61%);
+  background-color: hsl(185,42%,37%);
+}
+
+body.active1 .reset:active, body.active1 .del:active{
+  background-color: hsl(185, 24%, 51%);
+}
+
+body.active2 .reset, body.active2 .del{
+  box-shadow: 0 3px 0 0 hsl(290,70%,36%);
+  background-color: hsl(281, 89%, 26%);
+  color: white;
+}
+
+body.active2 .reset:active, body.active2 .del:active{
+  background-color: hsl(281, 64%, 35%);;
+}
+
+.reset, .equal{
+  width: 200px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.equal {
+  box-shadow: 0 3px 0 0 hsl(6,70%,34%);
+  background-color: hsl(6,63%,50%);
+}
+
+body.active1 .equal{
+  box-shadow: 0 3px 0 0 hsl(25,99%,27%);
+  background-color: hsl(25,98%,48%);
+}
+
+body.active1 .equal:active{
+  background-color: hsl(25, 77%, 51%);
+}
+
+body.active2 .equal{
+  box-shadow: 0 3px 0 0 hsl(177,92%,70%);
+  background-color: hsl(176,100%,44%);
+  color: hsl(198, 20%, 13%);
+}
+
+body.active2 .equal:active{
+  background-color: hsl(176, 78%, 75%);
+}
